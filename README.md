@@ -1,15 +1,13 @@
 CAB302 Software Development
 ===========================
-Practical 2
-------------------------------------------------------
 
-# Object Orientation and API Documentation #
+# Practical 2: Object Orientation and API Documentation
 
 This week's practical exercises aim to get you familiar with developing object-oriented class hierarchies in Java and documenting them using Javadoc in the Eclipse integrated development environment.
 
 * * *
 
-## Exercise 1: Footy scores ##
+## Exercise 1: Footy scores
 
 This exercise will give you experience at developing a simple (concrete) _class_ in Java. In Australian Rules Football, teams earns _points_ by kicking _goals_, worth six points each, and _behinds_, worth one point each. Your job is to create a class called [`FootyScore`](FootyAPI/index.html) (in a package called `footyAnswers`) which keeps track of the score earned by a particular team. This class needs to:
 
@@ -24,11 +22,11 @@ To help you assess your solution the file `FootyTester.java` contains a 'main' p
 Collingwood and Richmond. It prints the breathless commentary of a typically rabid AFL announcer. If your solution works correctly, the test program will print the following
 commentary on the console. Note that your `sayScore` method should return the three numbers separated by a comma and a space.
 
-    At the end of the first quarter, it's Collingwood, 0, 2, 2 and Richmond 1, 0, 6. 
+    At the end of the first quarter, it's Collingwood, 0, 2, 2 and Richmond 1, 0, 6.
     Richmond lead by 4 points!
-    At the end of the second quarter, it's Collingwood, 2, 3, 15 and Richmond 3, 0, 18. 
+    At the end of the second quarter, it's Collingwood, 2, 3, 15 and Richmond 3, 0, 18.
     Richmond lead by 3 points!
-    At the end of the third quarter, it's Collingwood, 3, 3, 21 and Richmond 3, 2, 20. 
+    At the end of the third quarter, it's Collingwood, 3, 3, 21 and Richmond 3, 2, 20.
     Collingwood lead by 1 point!
 
 (We leave the final score in doubt to avoid offending any Collingwood or Richmond
@@ -36,13 +34,13 @@ supporters in the class.)
 
 * * *
 
-## Exercise 2: Documenting your footy score class ##
+## Exercise 2: Documenting your footy score class
 
 Use the Javadoc tool to generate a Hyper-Text Markup Language file that describes your `FootyScore` class. Ensure that the purpose of the class, its methods, and their parameters are all clearly described in the HTML documentation by including appropriate comments and annotations in the Java source code. (Enclosed with these instructions we've included an example showing what the result should look like. To see it, open the relevant [`index.html`](FootyAPI/index.html) file in your favourite HTML browser.)
 
 * * *
 
-## Exercise 3: A superhero class hierarchy ##
+## Exercise 3: A superhero class hierarchy
 
 This exercise will give you experience at interpreting Application Programming Interface documentation and developing non-trivial class hierarchies, including a Java _interface_, _abstract class_ and _concrete classes_.
 
@@ -64,9 +62,9 @@ Your task is to study the API documentation and, based on this, to implement the
 
 * * *
 
-## Exercise 4: Adding secret agents as heroes ##
+## Exercise 4: Adding secret agents as heroes
 
-So far the `Hero` interface doesn't appear to be especially helpful. However, it serves an important purpose because it gives us flexibility in extending the type hierarchy. For instance, we can add a (concrete) `SecretAgent` class below it, without affecting the superhero classes in any way. 
+So far the `Hero` interface doesn't appear to be especially helpful. However, it serves an important purpose because it gives us flexibility in extending the type hierarchy. For instance, we can add a (concrete) `SecretAgent` class below it, without affecting the superhero classes in any way.
 
 ![Hero class heirarchy extended with SecretAgent](imgs/agent.jpg "Hero class heirarchy extended with SecretAgent")
 
@@ -74,6 +72,6 @@ Not only do secret agents have an alias (when on a mission James Bond is known a
 
 * * *
 
-## Exercise 5: Documenting your hero class hierarchy ##
+## Exercise 5: Documenting your hero class hierarchy
 
 Finally, use the Javadoc tool to generate your own API documentation for your entire `Hero` class hierarchy, including all of its subclasses. If successful the output should look the same as the one we provided!
