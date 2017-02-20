@@ -56,7 +56,9 @@ Included in this documentation is the role of each class and the intended purpos
 
 Your task is to study the API documentation and, based on this, to implement the missing classes, `Hero.java`, `SuperHero.java`, `Human.java`, `EnhancedHuman.java` and `SuperHuman.java`. These classes form a hierarchy as shown overleaf. Make sure you read _all_ the API documentation and clearly understand how the various classes and their methods relate to one another _before_ you start writing code. Also, try to make good use of Eclipse's "quick fix" features to help you develop the code quickly. For instance, when creating a subclass you can get Eclipse to automatically declare all the inherited methods that must be implemented.
 
-**Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set. The code to declare a Set is `HashSet<T> set=new HashSet<T>()`, where  `T`. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the Java API or by using Eclipse's inline help.
+**Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set. The code to declare a Set is 
+`HashSet<T> set=new HashSet<T>();`,
+where  `T` is the name of the class stored in the Set. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the Java API or by using Eclipse's inline help.
 
 
 ![Hero class hierarchy](imgs/hero.jpg "Hero class hierarchy")
@@ -76,7 +78,7 @@ So far the `Hero` interface doesn't appear to be especially helpful. However, it
 
 Not only do secret agents have an alias (when on a mission James Bond is known as '007' and Maxwell Smart as 'Agent 86'), but they are frequently associated with gadgets (like Max's shoephone). Therefore, your `SecretAgent` class should inherit the features of the `Hero` class and add an attribute which stores the gadget typically associated with this agent (as a text string). Once again, consult the [API documentation provided](HeroesAPI/index.html) for the precise specification. Use the `AgentTester.java` program to test your class.
 
-(**Question**)  Do you need to declare a method for returning a secret agent powers? Why or why not?
+**Question**  Do you need to declare a method for returning a secret agent powers? Why or why not?
 
 
 * * *
