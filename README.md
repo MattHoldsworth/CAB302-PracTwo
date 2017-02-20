@@ -58,7 +58,7 @@ Your task is to study the API documentation and, based on this, to implement the
 
 **Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set. The code to declare a Set is 
 `HashSet<T> set=new HashSet<T>();`,
-where  `T` is the name of the class stored in the Set. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the Java API or by using Eclipse's inline help.
+where  `T` is the name of the class stored in the Set. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the [`Java API`] (https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or by using Eclipse's inline help.
 
 
 ![Hero class hierarchy](imgs/hero.jpg "Hero class hierarchy")
