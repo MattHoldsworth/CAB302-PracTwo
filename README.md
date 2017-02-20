@@ -36,7 +36,7 @@ supporters in the class.)
 
 ## Exercise 2: Documenting your footy score class
 
-Use the Javadoc tool to generate a Hyper-Text Markup Language file that describes your `FootyScore` class. Ensure that the purpose of the class, its methods, and their parameters are all clearly described in the HTML documentation by including appropriate comments and annotations in the Java source code. (Enclosed with these instructions we've included an example showing what the result should look like. To see it, open the relevant [`index.html`](FootyAPI/index.html) file in your favourite HTML browser.)
+Use the Javadoc tool to generate a Hyper-Text Markup Language file that describes your `FootyScore` class. The Javadoc tool is found via `Project->Generate Javadoc` in the Eclipse menu. Ensure that the purpose of the class, its methods, and their parameters are all clearly described in the HTML documentation by including appropriate comments and annotations in the Java source code. (Enclosed with these instructions we've included an example showing what the result should look like. To see it, open the relevant [`index.html`](FootyAPI/index.html) file in your favourite HTML browser.)
 
 * * *
 
@@ -44,7 +44,7 @@ Use the Javadoc tool to generate a Hyper-Text Markup Language file that describe
 
 This exercise will give you experience at interpreting Application Programming Interface documentation and developing non-trivial class hierarchies, including a Java _interface_, _abstract class_ and _concrete classes_.
 
-Comic book superheroes remain in vogue thanks to the financial success of the recent Marvel movies. In this exercise you will develop a type hierarchy that models the characteristics of comic book superheroes. (But for testing purposes we will use 'Golden Age' superheroes from the 1940s and 1950s as these are the ones most familiar to your elderly lecturers.)
+Comic book superheroes remain in vogue thanks to the financial success of the recent Marvel movies. In this exercise you will develop a type hierarchy that models the characteristics of comic book superheroes. (But for testing purposes we will use 'Golden Age' superheroes from the 1940s and 1950s since these were when superheroes peaked.)
 
 Enclosed with these instructions you will find the [API documentation for a 'superhero' class hierarchy](HeroesAPI/index.html), along with two Java files:
 
@@ -56,9 +56,15 @@ Included in this documentation is the role of each class and the intended purpos
 
 Your task is to study the API documentation and, based on this, to implement the missing classes, `Hero.java`, `SuperHero.java`, `Human.java`, `EnhancedHuman.java` and `SuperHuman.java`. These classes form a hierarchy as shown overleaf. Make sure you read _all_ the API documentation and clearly understand how the various classes and their methods relate to one another _before_ you start writing code. Also, try to make good use of Eclipse's "quick fix" features to help you develop the code quickly. For instance, when creating a subclass you can get Eclipse to automatically declare all the inherited methods that must be implemented.
 
+**Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set. The code to declare a Set is `HashSet<T> set=new HashSet<T>()`, where  `T`. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the Java API or by using Eclipse's inline help.
+
+
 ![Hero class hierarchy](imgs/hero.jpg "Hero class hierarchy")
 
 (**Comment for nitpickers**: The particular choices of superpowers used in test program `HeroTester.java` are somewhat debatable. For instance, Captain Marvel is usually described as 'swift as Mercury' but we have not given him the power of 'super speed' because he seems to be nowhere near as fast as characters who specialise in speed, such as The Flash. Similarly, we have not ascribed the power of flight to Wonder Woman because in her Golden Age incarnation she needed her invisible plane to fly. More recently, however, she has acquired the ability to 'ride the winds' as if flying. In summary, the superpowers used in `HeroTester.java` are for illustrative purposes only. No correspondence will be entered into.)
+
+**Question**:  Why was Hero an declared as an interface? Why was SuperHero declared as an abstract Class. Could/Should we have declared Hero as an abstract class or SuperHero as an interface? Why or why not?
+
 
 * * *
 
@@ -69,6 +75,9 @@ So far the `Hero` interface doesn't appear to be especially helpful. However, it
 ![Hero class heirarchy extended with SecretAgent](imgs/agent.jpg "Hero class heirarchy extended with SecretAgent")
 
 Not only do secret agents have an alias (when on a mission James Bond is known as '007' and Maxwell Smart as 'Agent 86'), but they are frequently associated with gadgets (like Max's shoephone). Therefore, your `SecretAgent` class should inherit the features of the `Hero` class and add an attribute which stores the gadget typically associated with this agent (as a text string). Once again, consult the [API documentation provided](HeroesAPI/index.html) for the precise specification. Use the `AgentTester.java` program to test your class.
+
+(**Question**)  Do you need to declare a method for returning a secret agent powers? Why or why not?
+
 
 * * *
 
