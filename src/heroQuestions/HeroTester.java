@@ -26,21 +26,6 @@ public class HeroTester {
 		Human BlackCanary = 
 			new Human("Dinah Drake", "Black Canary");
 
-		/* Superman and Wonder Woman are superhumans */
-		SuperHuman WonderWoman = 
-			new SuperHuman("Wonder Woman", 
-					"Diana Prince",
-					new SuperPower[]{SuperStrength,
-					SuperIntellect});
-		SuperHuman Superman = 
-			new SuperHuman("Superman", 
-					"Clark Kent",
-					new SuperPower[] {Flight,
-					SuperStrength,
-					XRayVision,
-					SuperSpeed,
-					Invulnerability});
-
 		/* Captain Marvel and Green Lantern are humans who
 		 * acquire their powers temporarily */
 		EnhancedHuman CaptainMarvel = 
@@ -57,6 +42,21 @@ public class HeroTester {
 					SuperSpeed,
 					Invulnerability});
 
+		/* Superman and Wonder Woman are superhumans */
+		SuperHuman WonderWoman = 
+			new SuperHuman("Wonder Woman", 
+					"Diana Prince",
+					new SuperPower[]{SuperStrength,
+					SuperIntellect});
+		SuperHuman Superman = 
+			new SuperHuman("Superman", 
+					"Clark Kent",
+					new SuperPower[] {Flight,
+					SuperStrength,
+					XRayVision,
+					SuperSpeed,
+					Invulnerability});
+		
 		/* Let's test the simplest kind of superheroes, mortals */
 		screen.println(" 1. In his normal identity Batman has no " +
 				"superpowers [Bruce Wayne, 0]: " + 
@@ -74,8 +74,9 @@ public class HeroTester {
 				"[No]: " +
 				(Batman.hasPower(Flight) ? "Yes" : "No"));
 		screen.println();
+		
 
-		/* Now let's try enhanced humans */
+		// Now let's try enhanced humans 
 		screen.println(" 5. As a mortal Captain Marvel is " +
 				"meek and has no powers [Billy Batson, 0]: " + 
 				CaptainMarvel.currentIdentity() + ", " +
@@ -100,37 +101,44 @@ public class HeroTester {
 				"power ring [Green Lantern, 365]: " +
 				GreenLantern.currentIdentity() + ", " +
 				GreenLantern.totalPower());
+		screen.println("11. Can the Green Latern fly across the Galaxy [Yes]: " +
+				(GreenLantern.hasPower(Flight) ? "Yes" : "No"));
 		GreenLantern.switchIdentity();
-		screen.println("11. But unless he recharges the ring " +
+		screen.println("12. But unless he recharges the ring " +
 				"every day he changes back [Hal Jordan, 0]: " +
 				GreenLantern.currentIdentity() + ", " +
-		        GreenLantern.totalPower());
+		        GreenLantern.totalPower());		
+		screen.println("13. Can Hal Jordan fly across the Galaxy [No]: " +
+				(GreenLantern.hasPower(Flight) ? "Yes" : "No"));
+		GreenLantern.switchIdentity();
+		
 		screen.println();
 		
-		/* Finally, let's try superhumans */
-		screen.println("12. When he first arrived on Earth, Superman already " +
+
+		// Finally, let's try superhumans 
+		screen.println("14. When he first arrived on Earth, Superman already " +
 				"had incredible powers [Superman, 385]: " + 
 				Superman.currentIdentity() + ", " +
 		        Superman.totalPower());
 		Superman.switchIdentity();
-		screen.println("13. He retains his superpowers even in his " +
+		screen.println("15. He retains his superpowers even in his " +
 				"secret identity [Clark Kent, 385]: " + 
 				Superman.currentIdentity() + ", " +
 		        Superman.totalPower());
 		Superman.losePowers(new SuperPower[] {SuperStrength, Invulnerability});
-		screen.println("14. However, when exposed to kryponite he loses " +
+		screen.println("16. However, when exposed to kryponite he loses " +
 				"his strength and invulnerability [160]: " +
 				Superman.totalPower());
-		screen.println("15. But kryptonite has " +
+		screen.println("17. But kryptonite has " +
 				"no effect on Wonder Woman " +
 				"who retains her full complement of powers [165]: " +
 				WonderWoman.totalPower());
 		WonderWoman.switchIdentity();
-		screen.println("16. When she switches to her plain identity " +
+		screen.println("18. When she switches to her plain identity " +
 				"does Wonder Woman still retain 'the Wisdom of Athena' [Yes]: " +
 				(WonderWoman.hasPower(SuperIntellect) ? "Yes" : "No"));
 		Superman.acquirePowers(new SuperPower[] {Invulnerability, SuperStrength});
-		screen.println("17. Fortunately, when the kryptonite is removed " +
+		screen.println("19. Fortunately, when the kryptonite is removed " +
 				"Superman gets his original powers back [385]: " +
 				Superman.totalPower());
 	}
