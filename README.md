@@ -56,9 +56,9 @@ Included in this documentation is the role of each class and the intended purpos
 
 Your task is to study the API documentation and, based on this, to implement the missing classes, `Hero.java`, `SuperHero.java`, `Human.java`, `EnhancedHuman.java` and `SuperHuman.java`. These classes form a hierarchy as shown overleaf. Make sure you read _all_ the API documentation and clearly understand how the various classes and their methods relate to one another _before_ you start writing code. Also, try to make good use of Eclipse's "quick fix" features to help you develop the code quickly. For instance, when creating a subclass you can get Eclipse to automatically declare all the inherited methods that must be implemented.
 
-**Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set. The code to declare a Set is 
+**Hint**: For one of the above classes you will can implement the powers as an array. For another one of the classes you will need to need to implement the powers as a Set, implemented as a HashSet. The code to declare a HashSet is 
 `HashSet<T> set=new HashSet<T>();`,
-where  `T` is the name of the class stored in the Set. We will learn about Sets and other Java collections in week 4. You can find out more about a Set, including with methods will be most useful, either via the [`Java API`](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or by using Eclipse's inline help.
+where  `T` is the name of the class stored in the Set. We will learn about Set/HashSet and other Java collections in week 4. You can find out more about the HashSet class, including with methods will be most useful, either via the [`Java API` - https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or by using Eclipse's inline help. Also, as powers are passed as an array you will need to find a way to convert them to a HashSet.
 
 
 ![Hero class hierarchy](imgs/hero.jpg "Hero class hierarchy")
